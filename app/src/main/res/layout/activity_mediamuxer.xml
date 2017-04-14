@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp"
+        >
+
+    <Button
+            android:id="@+id/exactor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="分离"/>
+
+    <Button
+            android:id="@+id/muxer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="分离视频"/>
+
+    <Button
+            android:id="@+id/muxer_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="分离音频"/>
+
+    <Button
+            android:id="@+id/combine_video"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="合成视频"/>
+
+
+</LinearLayout>

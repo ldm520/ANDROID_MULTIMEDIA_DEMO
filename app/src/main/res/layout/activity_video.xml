@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+            android:id="@+id/action_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:text="手机自带播放器"
+            />
+
+    <Button
+            android:id="@+id/videoview_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:text="VideoView播放视频"
+            />
+
+    <Button
+            android:id="@+id/mediaPlayer_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:text="MediaPlayer播放视频"
+            />
+
+    <Button
+            android:id="@+id/record_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:text="视频录制"
+            />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/LinearLayout1"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:orientation="vertical">
+
+    <SurfaceView
+            android:id="@+id/surfaceVIew"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            tools:context=".MainActivity"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85">
+
+        <Button
+                android:id="@+id/btn_play"
+                android:text="开始"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btn_pause"
+                android:text="暂停"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btn_stop"
+                android:text="停止"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btn_low"
+                android:text="调低音量"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btn_hight"
+                android:text="调高音量"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

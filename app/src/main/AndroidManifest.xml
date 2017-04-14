@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ldm.multimedia">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AudioActivity"/>
+        <activity android:name=".activity.VideoActivity"/>
+        <activity android:name=".activity.ImageActivity"/>
+        <activity android:name=".activity.OtherActivity"/>
+        <activity android:name=".activity.AudioManagerActivity"/>
+        <activity android:name=".activity.MediaRecorderActivity"/>
+        <activity android:name=".activity.VideoViewActiivty"/>
+        <activity android:name=".activity.MediaPlayerActiivty"/>
+        <activity android:name=".activity.RecordVideoActivity"/>
+        <activity android:name=".activity.AudioRecordActivity"/>
+        <activity android:name=".activity.MediamuxerActivity"/>
+        <activity android:name=".activity.MoreMultiMdeiaApiActiivty"/>
+    </application>
+
+</manifest>

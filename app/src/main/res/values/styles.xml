@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+    </style>
+
+    <style name="popwindow_exit_anim_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/show_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/hidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+</resources>
