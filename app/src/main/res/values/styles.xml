@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+    <style name="AppTheme" parent="android:Theme.Material.Light">
     </style>
 
     <style name="popwindow_exit_anim_style" parent="android:Animation">

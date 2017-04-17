@@ -16,9 +16,10 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
@@ -26,16 +27,14 @@ import android.widget.Toast;
 
 import com.ldm.multimedia.BaseActivity;
 import com.ldm.multimedia.R;
+import com.ldm.multimedia.adapter.MainAdapter;
 import com.ldm.multimedia.utils.ImagePopupWindowHelper;
 
 import java.io.File;
 
-public class MainActivity extends BaseActivity implements ImagePopupWindowHelper.ISlectPicListener {
-    private Button btn_image;
-    private Button btn_audio;
-    private Button btn_video;
-    private Button btn_other;
+public class MainActivity extends BaseActivity implements ImagePopupWindowHelper.ISlectPicListener, MainAdapter.RvItemClickListener {
     private ImageView photo_iv;
+    private RecyclerView recyclerView;
     /***
      * 使用照相机拍照获取图片
      */
@@ -53,6 +52,8 @@ public class MainActivity extends BaseActivity implements ImagePopupWindowHelper
     private Uri photoUri;
     //剪裁图片
     private static final int CROP_PICTURE = 3;
+    private String[] mDatas = {"图片部分", "音频部分", "视频部分", "其它部分"};
+    private MainAdapter mainAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,37 +62,18 @@ public class MainActivity extends BaseActivity implements ImagePopupWindowHelper
         mPicPopupHelper = new ImagePopupWindowHelper(this);
         mPicPopupHelper.setPicListener(this);
         mPopupWindow = mPicPopupHelper.initPopupWindow();
-        this.btn_image = (Button) findViewById(R.id.btn_image);
-        this.btn_image.setOnClickListener(this);
-        this.btn_audio = (Button) findViewById(R.id.btn_audio);
-        this.btn_audio.setOnClickListener(this);
-        this.btn_video = (Button) findViewById(R.id.btn_video);
-        this.btn_video.setOnClickListener(this);
-        this.btn_other = (Button) findViewById(R.id.btn_other);
-        this.btn_other.setOnClickListener(this);
+        recyclerView = (RecyclerView) findViewById(R.id.recycle_view);
+        mainAdapter = new MainAdapter(mDatas, this);
+        //设置适配器
+        recyclerView.setAdapter(mainAdapter);
+        //设置垂直显示
+        LinearLayoutManager ll = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(ll);
         this.photo_iv = (ImageView) findViewById(R.id.photo_iv);
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_image:
-                mPicPopupHelper.backgroundAlpha(0.5f);
-                mPopupWindow.showAtLocation(btn_image, Gravity.BOTTOM, 0, 50);// 显示
-                break;
-            case R.id.btn_audio:
-                showActivity(this, AudioActivity.class);
-                break;
-            case R.id.btn_video:
-                showActivity(this, VideoActivity.class);
-                break;
-            case R.id.btn_other:
-                showActivity(this, OtherActivity.class);
-                break;
-
-
-        }
-
     }
 
     @Override
@@ -282,4 +264,23 @@ public class MainActivity extends BaseActivity implements ImagePopupWindowHelper
     }
 
     private static final int MY_PERMISSIONS_REQUEST_TAKE_PHOTO = 10;
+
+    @Override
+    public void onItemClick(View v, int position) {
+        switch (position) {
+            case 0:
+                mPicPopupHelper.backgroundAlpha(0.5f);
+                mPopupWindow.showAtLocation(v, Gravity.BOTTOM, 0, 50);// 显示
+                break;
+            case 1:
+                showActivity(this, AudioActivity.class);
+                break;
+            case 2:
+                showActivity(this, VideoActivity.class);
+                break;
+            case 3:
+                showActivity(this, OtherActivity.class);
+                break;
+        }
+    }
 }

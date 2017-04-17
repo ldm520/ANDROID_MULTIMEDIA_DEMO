@@ -5,45 +5,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <Button
-            android:id="@+id/btn_image"
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="16sp"
-            android:text="图片部分"
-            android:background="@drawable/btn_oval_bg"
-            />
-
-    <Button
-            android:id="@+id/btn_audio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="16sp"
-            android:background="@drawable/btn_oval_bg"
-            android:text="音频部分"
-            />
-
-    <Button
-            android:id="@+id/btn_video"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="16sp"
-            android:background="@drawable/btn_oval_bg"
-            android:text="视频部分"
-            />
-
-    <Button
-            android:id="@+id/btn_other"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/btn_oval_bg"
-            android:textSize="16sp"
-            android:text="其它部分"
-            />
+            android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
 
     <ImageView
             android:id="@+id/photo_iv"
