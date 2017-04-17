@@ -1,0 +1,14 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="#198542">   <!-- 点击按钮时颜色-->
+
+    <item>
+        <shape android:shape="oval"><!--形状是椭圆形-->
+            <solid android:color="@android:color/white"><!--正常状态时颜色-->
+                <corners android:radius="10dp">
+                </corners>
+            </solid>
+        </shape>
+    </item>
+
+</ripple>

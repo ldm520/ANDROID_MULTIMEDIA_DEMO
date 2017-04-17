@@ -10,6 +10,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/btn_oval_bg"
             android:textSize="16sp"
             android:text="AudioManager实现音量控制"
             />
@@ -20,6 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="16sp"
+            android:background="@drawable/btn_oval_bg"
             android:text="MediaRecord录音及播放"
             />
 
@@ -29,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="16sp"
+            android:background="@drawable/btn_oval_bg"
             android:text="AudioRecord录音"
             />
 </LinearLayout>

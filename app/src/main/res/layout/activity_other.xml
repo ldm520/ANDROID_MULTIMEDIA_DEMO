@@ -10,6 +10,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/btn_oval_bg"
             android:textSize="16sp"
             android:text="视频分离和合成"
             />
@@ -17,6 +18,7 @@
 
     <Button
             android:id="@+id/btn_more"
+            android:background="@drawable/btn_oval_bg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

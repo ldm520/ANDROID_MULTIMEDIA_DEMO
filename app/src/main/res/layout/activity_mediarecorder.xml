@@ -11,6 +11,8 @@
             android:layout_height="wrap_content"
             android:text="开始录音"
             android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_oval_bg"
             />
 
     <ListView

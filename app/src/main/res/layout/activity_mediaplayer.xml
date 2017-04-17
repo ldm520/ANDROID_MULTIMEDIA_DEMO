@@ -22,6 +22,7 @@
         <Button
                 android:id="@+id/btn_play"
                 android:text="开始"
+                android:background="@drawable/btn_rect_bg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -29,23 +30,27 @@
                 android:id="@+id/btn_pause"
                 android:text="暂停"
                 android:layout_width="wrap_content"
+                android:background="@drawable/btn_rect_bg"
                 android:layout_height="wrap_content"/>
 
         <Button
                 android:id="@+id/btn_stop"
                 android:text="停止"
+                android:background="@drawable/btn_rect_bg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         <Button
                 android:id="@+id/btn_low"
                 android:text="调低音量"
+                android:background="@drawable/btn_rect_bg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         <Button
                 android:id="@+id/btn_hight"
                 android:text="调高音量"
+                android:background="@drawable/btn_rect_bg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
     </LinearLayout>

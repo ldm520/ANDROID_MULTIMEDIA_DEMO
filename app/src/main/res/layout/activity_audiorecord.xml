@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/btn_oval_bg"
             android:textSize="16sp"
             android:text="开始录音"
             />
@@ -27,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/btn_oval_bg"
             android:textSize="16sp"
             android:text="录音完成"
             />
@@ -38,6 +40,7 @@
             android:layout_margin="10dp"
             android:textSize="16sp"
             android:text="播放录音"
+            android:background="@drawable/btn_oval_bg"
             />
 
     <Button
@@ -46,13 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="16sp"
+            android:background="@drawable/btn_oval_bg"
             android:text="播放完成"
             />
 
-    <ImageView
-            android:id="@+id/photo_iv"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:scaleType="fitXY"
-            android:layout_margin="10dp"/>
 </LinearLayout>

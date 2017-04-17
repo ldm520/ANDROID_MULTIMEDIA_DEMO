@@ -12,6 +12,7 @@
             android:layout_margin="10dp"
             android:textSize="16sp"
             android:text="手机自带播放器"
+            android:background="@drawable/btn_oval_bg"
             />
 
     <Button
@@ -20,6 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="16sp"
+            android:background="@drawable/btn_oval_bg"
             android:text="VideoView播放视频"
             />
 
@@ -29,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="16sp"
+            android:background="@drawable/btn_oval_bg"
             android:text="MediaPlayer播放视频"
             />
 
@@ -38,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="16sp"
+            android:background="@drawable/btn_oval_bg"
             android:text="视频录制"
             />
 </LinearLayout>

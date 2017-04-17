@@ -10,23 +10,27 @@
             android:id="@+id/exactor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/btn_oval_bg"
             android:text="分离"/>
 
     <Button
             android:id="@+id/muxer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/btn_oval_bg"
             android:text="分离视频"/>
 
     <Button
             android:id="@+id/muxer_audio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/btn_oval_bg"
             android:text="分离音频"/>
 
     <Button
             android:id="@+id/combine_video"
             android:layout_height="wrap_content"
+            android:background="@drawable/btn_oval_bg"
             android:layout_width="match_parent"
             android:text="合成视频"/>
 
