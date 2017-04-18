@@ -10,7 +10,9 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:scaleType="fitXY"
-            android:layout_margin="10dp"/>
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
 
     <android.support.v7.widget.RecyclerView
             android:id="@+id/recycle_view"

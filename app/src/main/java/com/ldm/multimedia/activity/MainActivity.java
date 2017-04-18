@@ -179,6 +179,7 @@ public class MainActivity extends BaseActivity implements ImagePopupWindowHelper
                 if (photoUri != null) {
                     Bitmap bitmap = BitmapFactory.decodeFile(picPath);
                     if (bitmap != null) {
+                        photo_iv.setVisibility(View.VISIBLE);
                         photo_iv.setImageBitmap(bitmap);
                     }
                 }
