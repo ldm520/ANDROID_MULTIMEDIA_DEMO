@@ -5,16 +5,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycle_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-    </android.support.v7.widget.RecyclerView>
-
     <ImageView
             android:id="@+id/photo_iv"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:scaleType="fitXY"
             android:layout_margin="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
 </LinearLayout>
